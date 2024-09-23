@@ -64,7 +64,7 @@ Partial Class Form1
         ' Frank
         ' 
         Frank.Image = CType(resources.GetObject("Frank.Image"), Image)
-        Frank.Location = New Point(214, 68)
+        Frank.Location = New Point(287, 78)
         Frank.Name = "Frank"
         Frank.Size = New Size(151, 223)
         Frank.SizeMode = PictureBoxSizeMode.StretchImage
