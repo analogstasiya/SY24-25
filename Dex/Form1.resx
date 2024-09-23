@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!--
+    Microsoft ResX Schema 
+
+    Version 2.0
+
+    The primary goals of this format is to allow a simple XML format
+    that is mostly human readable. The generation and parsing of the
+    various data types are done through the TypeConverter classes
+    associated with the data types.
+
+    Example:
+
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+
+    There are any number of "resheader" rows that contain simple
+    name/value pairs.
+
+    Each data row contains a name, and value. The row also contains a
+    type or mimetype. Type corresponds to a .NET class that support
+    text/value conversion through the TypeConverter architecture.
+    Classes that don't support this are serialized and stored with the
+    mimetype set.
+
+    The mimetype is used for serialized objects, and tells the
+    ResXResourceReader how to depersist the object. This is currently not
+    extensible. For a given mimetype the value must be set accordingly:
+
+    Note - application/x-microsoft.net.object.binary.base64 is the format
+    that the ResXResourceWriter will generate, however the reader can
+    read any of the formats listed below.
+
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="SwampRabbitFunFact.Text" xml:space="preserve">
+    <value>Swamp Rabbits are very good at swimming. When they are being chased by a predator, they oftentimes jump into a nearby body of water and swim away. In 1979, there was a well-publicized incident where a couple of hounds were chasing a swamp rabbit and the rabbit jumped in the water, swimming up to then-President Jimmy Carter's fishing boat. Carter shooed the rabbit away by splashing water with a paddle. This was in Georgia.</value>
+  </data>
+  <data name="DesertCottontailHabitatTextBox.Text" xml:space="preserve">
+    <value>Desert Cottontails inhabit the desert regions of western United States and Mexico, but they can also be found in less dry areas such as  pinyon-juniper forests. States: Nebraska, Kansas, Wyoming, Nevada, North Dakota, Texas, California, New Mexico, South Dakota, Oklahoma, Colorado, Utah, Arizona, Montana, Baja California. Biomes: Desert and Xeric Shrublands, Temperate coniferous forest, Temperate grasslands, Tropical dry forest. </value>
+  </data>
+  <data name="MarshRabbitHabitatTextBox.Text" xml:space="preserve">
+    <value>Marsh Rabbits live in the South eastern United States and live close to water. States: Virginia, Alabama, North Carolina, South Carolina, Georgia, Florida. Biomes: Flooded grasslands and savannas , Mangrove, Tropical moist forests   </value>
+  </data>
+  <data name="MarshRabbitDietTextBox.Text" xml:space="preserve">
+    <value>Diet: herbivorous. Typically, they feed on leaves and bulbs of marsh plants including cattails, brushes, and grasses. They can also feed on other aquatic or marsh plants such as centella, greenbrier vine, marsh pennywort, water hyacinth, wild potato, and amaryllis.</value>
+  </data>
+  <data name="MarshRabbitPredators.Text" xml:space="preserve">
+    <value>Predators: Birds of prey such as the great horned owl and northern harrier or marsh hawk are the major predators of the rabbits. Other predators include alligators, snakes, bobcats, foxes, and coyotes.</value>
+  </data>
+  <data name="NewEnglandCottontailHabitat.Text" xml:space="preserve">
+    <value>Lives in US and Canada. States: New York, Rhode Island, Connecticut, Maine, Massachusetts, New Hampshire, Vermont, QuébecBiomes: The New England cottontail is a habitat specialist. It does well in early successional forest which are forests that are less than 25 years old, with a dense understory of thick, tangled vegetation, preferably of blueberry or mountain laurel. These forests matured into closed-canopy stands and the shrub layer began to thin in the 1960s, and as a result, the New England cottontail habit declined.</value>
+  </data>
+  <data name="NewEnglandCottontailDiet.Text" xml:space="preserve">
+    <value>Diet: New England cottontails are herbivores and their diet varies based on the season and local forage opportunities. In the spring and summer, they primarily eat herbaceous plants (including leaves, stems, wood, bark, flowers, fruits, and seeds) from grasses and forbs. Beginning in the fall and continuing into the winter, New England cottontails consume mostly woody plants.</value>
+  </data>
+  <data name="NewEnglandCottontailPredators.Text" xml:space="preserve">
+    <value>Known predators of New England cottontails include weasels, domestic cats, red foxes, fishers, birds of prey, coyotes, and bobcats. Past predators may have included gray wolves, eastern cougars, wolverines, and the Canada lynx. </value>
+  </data>
+  <data name="NewEnglandCottontailSadFact.Text" xml:space="preserve">
+    <value>I lied. It's not a fun fact, but rather, a sad one. Muahahahaha. New England Cottontails are vulnerable to extinction due to loss of habitat, competition with Eastern Cottontails, and because they keep crossbreeding with the eastern cottontails.</value>
+  </data>
+  <data name="SwampRabbitDiet.Text" xml:space="preserve">
+    <value>Diet: Swamp rabbits are herbivorous; they eat a variety of foraged plants, including grasses, sedges, shrubs, tree bark seedlings, and twigs. They feed mainly at night but rain showers often cause them to feed during the daytime. A study has found that the preferred foods of Swamp Rabbits are savannah panicgrass, false nettle, dewberry and greenbrier.</value>
+  </data>
+</root>
