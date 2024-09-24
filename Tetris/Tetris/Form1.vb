@@ -2,6 +2,7 @@
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
         follow(Frank, Sheffrard, 3, 3)
         follow(lynz, Sheffrard, 7, 7)
+        follow(bert, Sheffrard, 5, 6)
     End Sub
     Sub follow(e As PictureBox, a As PictureBox, xspeed As Integer, yspeed As Integer)
         If e.Location.Y < a.Location.Y Then

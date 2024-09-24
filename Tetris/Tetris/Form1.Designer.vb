@@ -30,19 +30,21 @@ Partial Class Form1
         Frank = New PictureBox()
         ouch = New Label()
         lynz = New PictureBox()
+        bert = New PictureBox()
         CType(Sheffrard, ComponentModel.ISupportInitialize).BeginInit()
         CType(Gold, ComponentModel.ISupportInitialize).BeginInit()
         CType(Frank, ComponentModel.ISupportInitialize).BeginInit()
         CType(lynz, ComponentModel.ISupportInitialize).BeginInit()
+        CType(bert, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' Sheffrard
         ' 
         Sheffrard.BackgroundImageLayout = ImageLayout.None
         Sheffrard.Image = CType(resources.GetObject("Sheffrard.Image"), Image)
-        Sheffrard.Location = New Point(2, -1)
+        Sheffrard.Location = New Point(151, 161)
         Sheffrard.Name = "Sheffrard"
-        Sheffrard.Size = New Size(172, 220)
+        Sheffrard.Size = New Size(154, 183)
         Sheffrard.SizeMode = PictureBoxSizeMode.StretchImage
         Sheffrard.TabIndex = 0
         Sheffrard.TabStop = False
@@ -64,9 +66,9 @@ Partial Class Form1
         ' Frank
         ' 
         Frank.Image = CType(resources.GetObject("Frank.Image"), Image)
-        Frank.Location = New Point(287, 78)
+        Frank.Location = New Point(345, 161)
         Frank.Name = "Frank"
-        Frank.Size = New Size(151, 223)
+        Frank.Size = New Size(131, 174)
         Frank.SizeMode = PictureBoxSizeMode.StretchImage
         Frank.TabIndex = 2
         Frank.TabStop = False
@@ -86,12 +88,22 @@ Partial Class Form1
         ' lynz
         ' 
         lynz.Image = CType(resources.GetObject("lynz.Image"), Image)
-        lynz.Location = New Point(471, 135)
+        lynz.Location = New Point(528, 161)
         lynz.Name = "lynz"
-        lynz.Size = New Size(151, 223)
+        lynz.Size = New Size(123, 174)
         lynz.SizeMode = PictureBoxSizeMode.StretchImage
         lynz.TabIndex = 4
         lynz.TabStop = False
+        ' 
+        ' bert
+        ' 
+        bert.Image = CType(resources.GetObject("bert.Image"), Image)
+        bert.Location = New Point(677, 161)
+        bert.Name = "bert"
+        bert.Size = New Size(102, 174)
+        bert.SizeMode = PictureBoxSizeMode.StretchImage
+        bert.TabIndex = 5
+        bert.TabStop = False
         ' 
         ' Form1
         ' 
@@ -99,6 +111,7 @@ Partial Class Form1
         AutoScaleMode = AutoScaleMode.Font
         BackColor = SystemColors.GradientInactiveCaption
         ClientSize = New Size(847, 493)
+        Controls.Add(bert)
         Controls.Add(lynz)
         Controls.Add(ouch)
         Controls.Add(Frank)
@@ -110,6 +123,7 @@ Partial Class Form1
         CType(Gold, ComponentModel.ISupportInitialize).EndInit()
         CType(Frank, ComponentModel.ISupportInitialize).EndInit()
         CType(lynz, ComponentModel.ISupportInitialize).EndInit()
+        CType(bert, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -120,5 +134,6 @@ Partial Class Form1
     Friend WithEvents Frank As PictureBox
     Friend WithEvents ouch As Label
     Friend WithEvents lynz As PictureBox
+    Friend WithEvents bert As PictureBox
 
 End Class
