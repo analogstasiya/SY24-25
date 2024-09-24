@@ -28,21 +28,24 @@ Partial Class Form1
         Timer1 = New Timer(components)
         Gold = New PictureBox()
         Frank = New PictureBox()
-        ouch = New Label()
         lynz = New PictureBox()
         bert = New PictureBox()
+        platform = New PictureBox()
+        PictureBox1 = New PictureBox()
         CType(Sheffrard, ComponentModel.ISupportInitialize).BeginInit()
         CType(Gold, ComponentModel.ISupportInitialize).BeginInit()
         CType(Frank, ComponentModel.ISupportInitialize).BeginInit()
         CType(lynz, ComponentModel.ISupportInitialize).BeginInit()
         CType(bert, ComponentModel.ISupportInitialize).BeginInit()
+        CType(platform, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' Sheffrard
         ' 
         Sheffrard.BackgroundImageLayout = ImageLayout.None
         Sheffrard.Image = CType(resources.GetObject("Sheffrard.Image"), Image)
-        Sheffrard.Location = New Point(151, 161)
+        Sheffrard.Location = New Point(12, 258)
         Sheffrard.Name = "Sheffrard"
         Sheffrard.Size = New Size(154, 183)
         Sheffrard.SizeMode = PictureBoxSizeMode.StretchImage
@@ -56,7 +59,7 @@ Partial Class Form1
         ' Gold
         ' 
         Gold.Image = My.Resources.Resources.gold_coin
-        Gold.Location = New Point(249, 419)
+        Gold.Location = New Point(762, 379)
         Gold.Name = "Gold"
         Gold.Size = New Size(73, 62)
         Gold.SizeMode = PictureBoxSizeMode.StretchImage
@@ -66,29 +69,17 @@ Partial Class Form1
         ' Frank
         ' 
         Frank.Image = CType(resources.GetObject("Frank.Image"), Image)
-        Frank.Location = New Point(345, 161)
+        Frank.Location = New Point(172, 267)
         Frank.Name = "Frank"
         Frank.Size = New Size(131, 174)
         Frank.SizeMode = PictureBoxSizeMode.StretchImage
         Frank.TabIndex = 2
         Frank.TabStop = False
         ' 
-        ' ouch
-        ' 
-        ouch.AutoSize = True
-        ouch.BackColor = Color.White
-        ouch.Font = New Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        ouch.Location = New Point(12, 364)
-        ouch.Name = "ouch"
-        ouch.Size = New Size(98, 41)
-        ouch.TabIndex = 3
-        ouch.Text = "Ouch!"
-        ouch.Visible = False
-        ' 
         ' lynz
         ' 
         lynz.Image = CType(resources.GetObject("lynz.Image"), Image)
-        lynz.Location = New Point(528, 161)
+        lynz.Location = New Point(343, 267)
         lynz.Name = "lynz"
         lynz.Size = New Size(123, 174)
         lynz.SizeMode = PictureBoxSizeMode.StretchImage
@@ -98,22 +89,43 @@ Partial Class Form1
         ' bert
         ' 
         bert.Image = CType(resources.GetObject("bert.Image"), Image)
-        bert.Location = New Point(677, 161)
+        bert.Location = New Point(531, 258)
         bert.Name = "bert"
-        bert.Size = New Size(102, 174)
+        bert.Size = New Size(93, 174)
         bert.SizeMode = PictureBoxSizeMode.StretchImage
         bert.TabIndex = 5
         bert.TabStop = False
+        bert.Tag = "-1"
+        ' 
+        ' platform
+        ' 
+        platform.Image = My.Resources.Resources.Stone_JE5_move
+        platform.Location = New Point(519, 438)
+        platform.Name = "platform"
+        platform.Size = New Size(176, 52)
+        platform.SizeMode = PictureBoxSizeMode.StretchImage
+        platform.TabIndex = 7
+        platform.TabStop = False
+        ' 
+        ' PictureBox1
+        ' 
+        PictureBox1.BackColor = SystemColors.AppWorkspace
+        PictureBox1.Location = New Point(0, 447)
+        PictureBox1.Name = "PictureBox1"
+        PictureBox1.Size = New Size(303, 43)
+        PictureBox1.TabIndex = 6
+        PictureBox1.TabStop = False
         ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        BackColor = SystemColors.GradientInactiveCaption
+        BackColor = Color.FromArgb(CByte(229), CByte(192), CByte(84))
         ClientSize = New Size(847, 493)
+        Controls.Add(platform)
+        Controls.Add(PictureBox1)
         Controls.Add(bert)
         Controls.Add(lynz)
-        Controls.Add(ouch)
         Controls.Add(Frank)
         Controls.Add(Gold)
         Controls.Add(Sheffrard)
@@ -124,16 +136,18 @@ Partial Class Form1
         CType(Frank, ComponentModel.ISupportInitialize).EndInit()
         CType(lynz, ComponentModel.ISupportInitialize).EndInit()
         CType(bert, ComponentModel.ISupportInitialize).EndInit()
+        CType(platform, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
-        PerformLayout()
     End Sub
 
     Friend WithEvents Sheffrard As PictureBox
     Friend WithEvents Timer1 As Timer
     Friend WithEvents Gold As PictureBox
     Friend WithEvents Frank As PictureBox
-    Friend WithEvents ouch As Label
     Friend WithEvents lynz As PictureBox
     Friend WithEvents bert As PictureBox
+    Friend WithEvents platform As PictureBox
+    Friend WithEvents PictureBox1 As PictureBox
 
 End Class
