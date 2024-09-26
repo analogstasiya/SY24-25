@@ -2,18 +2,23 @@
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
         follow(Frank, Sheffrard, 3, 3)
         follow(lynz, Sheffrard, 7, 7)
-        pace(bert, platform, 2)
+        follow(bert, Sheffrard, 3, 6)
+        PaceX(bert, platform, 10)
     End Sub
-    Sub pace(e As PictureBox, p As PictureBox, speed As Integer)
+    Sub PaceX(e As PictureBox, p As PictureBox, speed As Integer)
         Dim dir As Integer
         dir = e.Tag
-        If e.Location.X > p.Location.X + p.Width Then
-            e.Location += New Point(-speed * dir, 0)
-        Else
-            e.Location += New Point(speed * dir, 0)
-            dir = -dir
+
+        movee(e, dir * speed, 0)
+
+        If e.Location.X > p.Location.X + p.Width / 2 Then
+            e.Tag = dir * -1
+        End If
+        If e.Location.X < p.Location.X Then
+            e.Tag = dir * -1
         End If
     End Sub
+
     Sub follow(e As PictureBox, a As PictureBox, xspeed As Integer, yspeed As Integer)
         If e.Location.Y < a.Location.Y Then
             movee(e, 0, yspeed)
@@ -49,5 +54,9 @@
     End Sub
     Sub movee(p As PictureBox, xdir As Integer, ydir As Integer)
         p.Location += New Point(xdir, ydir)
+    End Sub
+
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
     End Sub
 End Class
