@@ -63,7 +63,6 @@ Partial Class Form1
         PictureBox26 = New PictureBox()
         PictureBox27 = New PictureBox()
         PictureBox28 = New PictureBox()
-        PictureBox30 = New PictureBox()
         PictureBox31 = New PictureBox()
         PictureBox29 = New PictureBox()
         PictureBox32 = New PictureBox()
@@ -77,6 +76,33 @@ Partial Class Form1
         PictureBox40 = New PictureBox()
         PictureBox23 = New PictureBox()
         finishline = New PictureBox()
+        PictureBox24 = New PictureBox()
+        coin14 = New PictureBox()
+        coin7 = New PictureBox()
+        coin11 = New PictureBox()
+        coin9 = New PictureBox()
+        coin15 = New PictureBox()
+        coin16 = New PictureBox()
+        coin1 = New PictureBox()
+        coin5 = New PictureBox()
+        coin6 = New PictureBox()
+        PictureBox54 = New PictureBox()
+        coin19 = New PictureBox()
+        coin12 = New PictureBox()
+        coin10 = New PictureBox()
+        coin8 = New PictureBox()
+        PictureBox66 = New PictureBox()
+        coin13 = New PictureBox()
+        PictureBox69 = New PictureBox()
+        PictureBox74 = New PictureBox()
+        PictureBox75 = New PictureBox()
+        coin17 = New PictureBox()
+        coin18 = New PictureBox()
+        PictureBox77 = New PictureBox()
+        PictureBox79 = New PictureBox()
+        winscreen = New Label()
+        resetbutton = New Button()
+        deathscreen = New Label()
         CType(Sheffrard, ComponentModel.ISupportInitialize).BeginInit()
         CType(coin, ComponentModel.ISupportInitialize).BeginInit()
         CType(Frank, ComponentModel.ISupportInitialize).BeginInit()
@@ -111,7 +137,6 @@ Partial Class Form1
         CType(PictureBox26, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox27, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox28, ComponentModel.ISupportInitialize).BeginInit()
-        CType(PictureBox30, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox31, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox29, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox32, ComponentModel.ISupportInitialize).BeginInit()
@@ -125,13 +150,37 @@ Partial Class Form1
         CType(PictureBox40, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox23, ComponentModel.ISupportInitialize).BeginInit()
         CType(finishline, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PictureBox24, ComponentModel.ISupportInitialize).BeginInit()
+        CType(coin14, ComponentModel.ISupportInitialize).BeginInit()
+        CType(coin7, ComponentModel.ISupportInitialize).BeginInit()
+        CType(coin11, ComponentModel.ISupportInitialize).BeginInit()
+        CType(coin9, ComponentModel.ISupportInitialize).BeginInit()
+        CType(coin15, ComponentModel.ISupportInitialize).BeginInit()
+        CType(coin16, ComponentModel.ISupportInitialize).BeginInit()
+        CType(coin1, ComponentModel.ISupportInitialize).BeginInit()
+        CType(coin5, ComponentModel.ISupportInitialize).BeginInit()
+        CType(coin6, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PictureBox54, ComponentModel.ISupportInitialize).BeginInit()
+        CType(coin19, ComponentModel.ISupportInitialize).BeginInit()
+        CType(coin12, ComponentModel.ISupportInitialize).BeginInit()
+        CType(coin10, ComponentModel.ISupportInitialize).BeginInit()
+        CType(coin8, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PictureBox66, ComponentModel.ISupportInitialize).BeginInit()
+        CType(coin13, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PictureBox69, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PictureBox74, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PictureBox75, ComponentModel.ISupportInitialize).BeginInit()
+        CType(coin17, ComponentModel.ISupportInitialize).BeginInit()
+        CType(coin18, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PictureBox77, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PictureBox79, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' Sheffrard
         ' 
         Sheffrard.BackgroundImageLayout = ImageLayout.None
         Sheffrard.Image = CType(resources.GetObject("Sheffrard.Image"), Image)
-        Sheffrard.Location = New Point(13, 86)
+        Sheffrard.Location = New Point(14, 202)
         Sheffrard.Name = "Sheffrard"
         Sheffrard.Size = New Size(28, 29)
         Sheffrard.SizeMode = PictureBoxSizeMode.StretchImage
@@ -145,9 +194,9 @@ Partial Class Form1
         ' coin
         ' 
         coin.Image = My.Resources.Resources.gold_coin
-        coin.Location = New Point(356, 317)
+        coin.Location = New Point(432, 286)
         coin.Name = "coin"
-        coin.Size = New Size(50, 41)
+        coin.Size = New Size(29, 33)
         coin.SizeMode = PictureBoxSizeMode.StretchImage
         coin.TabIndex = 1
         coin.TabStop = False
@@ -162,6 +211,7 @@ Partial Class Form1
         Frank.SizeMode = PictureBoxSizeMode.StretchImage
         Frank.TabIndex = 2
         Frank.TabStop = False
+        Frank.Tag = "enemy"
         ' 
         ' lynz
         ' 
@@ -172,6 +222,7 @@ Partial Class Form1
         lynz.SizeMode = PictureBoxSizeMode.StretchImage
         lynz.TabIndex = 4
         lynz.TabStop = False
+        lynz.Tag = "enemy"
         ' 
         ' bert
         ' 
@@ -182,7 +233,7 @@ Partial Class Form1
         bert.SizeMode = PictureBoxSizeMode.StretchImage
         bert.TabIndex = 5
         bert.TabStop = False
-        bert.Tag = "1"
+        bert.Tag = "enemy"
         ' 
         ' l
         ' 
@@ -248,9 +299,9 @@ Partial Class Form1
         ' PictureBox6
         ' 
         PictureBox6.BackColor = SystemColors.ControlDarkDark
-        PictureBox6.Location = New Point(213, 384)
+        PictureBox6.Location = New Point(213, 364)
         PictureBox6.Name = "PictureBox6"
-        PictureBox6.Size = New Size(10, 57)
+        PictureBox6.Size = New Size(10, 77)
         PictureBox6.TabIndex = 12
         PictureBox6.TabStop = False
         PictureBox6.Tag = "wall"
@@ -258,7 +309,7 @@ Partial Class Form1
         ' PictureBox7
         ' 
         PictureBox7.BackColor = SystemColors.ControlDarkDark
-        PictureBox7.Location = New Point(213, 375)
+        PictureBox7.Location = New Point(213, 364)
         PictureBox7.Name = "PictureBox7"
         PictureBox7.Size = New Size(94, 10)
         PictureBox7.TabIndex = 13
@@ -410,9 +461,9 @@ Partial Class Form1
         Label2.Font = New Font("Segoe UI", 13.8F)
         Label2.Location = New Point(-3, -1)
         Label2.Name = "Label2"
-        Label2.Size = New Size(185, 31)
+        Label2.Size = New Size(148, 31)
         Label2.TabIndex = 30
-        Label2.Text = "Escape the Maze"
+        Label2.Text = "ESCAPE!!!!!!!!"
         ' 
         ' PictureBox11
         ' 
@@ -448,7 +499,7 @@ Partial Class Form1
         ' PictureBox20
         ' 
         PictureBox20.Image = My.Resources.Resources.gold_coin
-        PictureBox20.Location = New Point(606, 126)
+        PictureBox20.Location = New Point(579, 126)
         PictureBox20.Name = "PictureBox20"
         PictureBox20.Size = New Size(26, 29)
         PictureBox20.SizeMode = PictureBoxSizeMode.StretchImage
@@ -516,16 +567,6 @@ Partial Class Form1
         PictureBox28.TabIndex = 42
         PictureBox28.TabStop = False
         PictureBox28.Tag = "wall"
-        ' 
-        ' PictureBox30
-        ' 
-        PictureBox30.BackColor = SystemColors.ControlDarkDark
-        PictureBox30.Location = New Point(717, 502)
-        PictureBox30.Name = "PictureBox30"
-        PictureBox30.Size = New Size(106, 11)
-        PictureBox30.TabIndex = 44
-        PictureBox30.TabStop = False
-        PictureBox30.Tag = "wall"
         ' 
         ' PictureBox31
         ' 
@@ -657,12 +698,338 @@ Partial Class Form1
         finishline.TabStop = False
         finishline.Tag = "finishline"
         ' 
+        ' PictureBox24
+        ' 
+        PictureBox24.Image = My.Resources.Resources.gold_coin
+        PictureBox24.Location = New Point(590, 286)
+        PictureBox24.Name = "PictureBox24"
+        PictureBox24.Size = New Size(29, 33)
+        PictureBox24.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox24.TabIndex = 58
+        PictureBox24.TabStop = False
+        PictureBox24.Tag = "coin"
+        ' 
+        ' coin14
+        ' 
+        coin14.Image = My.Resources.Resources.gold_coin
+        coin14.Location = New Point(733, 53)
+        coin14.Name = "coin14"
+        coin14.Size = New Size(29, 33)
+        coin14.SizeMode = PictureBoxSizeMode.StretchImage
+        coin14.TabIndex = 59
+        coin14.TabStop = False
+        coin14.Tag = "coin"
+        ' 
+        ' coin7
+        ' 
+        coin7.Image = My.Resources.Resources.gold_coin
+        coin7.Location = New Point(13, 286)
+        coin7.Name = "coin7"
+        coin7.Size = New Size(29, 33)
+        coin7.SizeMode = PictureBoxSizeMode.StretchImage
+        coin7.TabIndex = 60
+        coin7.TabStop = False
+        coin7.Tag = "coin"
+        ' 
+        ' coin11
+        ' 
+        coin11.Image = My.Resources.Resources.gold_coin
+        coin11.Location = New Point(229, 391)
+        coin11.Name = "coin11"
+        coin11.Size = New Size(29, 33)
+        coin11.SizeMode = PictureBoxSizeMode.StretchImage
+        coin11.TabIndex = 61
+        coin11.TabStop = False
+        coin11.Tag = "coin"
+        ' 
+        ' coin9
+        ' 
+        coin9.Image = My.Resources.Resources.gold_coin
+        coin9.Location = New Point(380, 391)
+        coin9.Name = "coin9"
+        coin9.Size = New Size(29, 33)
+        coin9.SizeMode = PictureBoxSizeMode.StretchImage
+        coin9.TabIndex = 62
+        coin9.TabStop = False
+        coin9.Tag = "coin"
+        ' 
+        ' coin15
+        ' 
+        coin15.Image = My.Resources.Resources.gold_coin
+        coin15.Location = New Point(733, 116)
+        coin15.Name = "coin15"
+        coin15.Size = New Size(29, 33)
+        coin15.SizeMode = PictureBoxSizeMode.StretchImage
+        coin15.TabIndex = 63
+        coin15.TabStop = False
+        coin15.Tag = "coin"
+        ' 
+        ' coin16
+        ' 
+        coin16.Image = My.Resources.Resources.gold_coin
+        coin16.Location = New Point(816, 116)
+        coin16.Name = "coin16"
+        coin16.Size = New Size(29, 33)
+        coin16.SizeMode = PictureBoxSizeMode.StretchImage
+        coin16.TabIndex = 64
+        coin16.TabStop = False
+        coin16.Tag = "coin"
+        ' 
+        ' coin1
+        ' 
+        coin1.Image = My.Resources.Resources.gold_coin
+        coin1.Location = New Point(75, 53)
+        coin1.Name = "coin1"
+        coin1.Size = New Size(29, 33)
+        coin1.SizeMode = PictureBoxSizeMode.StretchImage
+        coin1.TabIndex = 65
+        coin1.TabStop = False
+        coin1.Tag = "coin"
+        ' 
+        ' coin5
+        ' 
+        coin5.Image = My.Resources.Resources.gold_coin
+        coin5.Location = New Point(278, 126)
+        coin5.Name = "coin5"
+        coin5.Size = New Size(29, 33)
+        coin5.SizeMode = PictureBoxSizeMode.StretchImage
+        coin5.TabIndex = 70
+        coin5.TabStop = False
+        coin5.Tag = "coin"
+        ' 
+        ' coin6
+        ' 
+        coin6.Image = My.Resources.Resources.gold_coin
+        coin6.Location = New Point(103, 214)
+        coin6.Name = "coin6"
+        coin6.Size = New Size(29, 33)
+        coin6.SizeMode = PictureBoxSizeMode.StretchImage
+        coin6.TabIndex = 71
+        coin6.TabStop = False
+        coin6.Tag = "coin"
+        ' 
+        ' PictureBox54
+        ' 
+        PictureBox54.Image = My.Resources.Resources.gold_coin
+        PictureBox54.Location = New Point(579, 179)
+        PictureBox54.Name = "PictureBox54"
+        PictureBox54.Size = New Size(29, 33)
+        PictureBox54.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox54.TabIndex = 72
+        PictureBox54.TabStop = False
+        PictureBox54.Tag = "coin"
+        ' 
+        ' coin19
+        ' 
+        coin19.Image = My.Resources.Resources.gold_coin
+        coin19.Location = New Point(493, 392)
+        coin19.Name = "coin19"
+        coin19.Size = New Size(29, 33)
+        coin19.SizeMode = PictureBoxSizeMode.StretchImage
+        coin19.TabIndex = 74
+        coin19.TabStop = False
+        coin19.Tag = "coin"
+        ' 
+        ' coin12
+        ' 
+        coin12.Image = My.Resources.Resources.gold_coin
+        coin12.Location = New Point(194, 448)
+        coin12.Name = "coin12"
+        coin12.Size = New Size(29, 33)
+        coin12.SizeMode = PictureBoxSizeMode.StretchImage
+        coin12.TabIndex = 79
+        coin12.TabStop = False
+        coin12.Tag = "coin"
+        ' 
+        ' coin10
+        ' 
+        coin10.Image = My.Resources.Resources.gold_coin
+        coin10.Location = New Point(308, 392)
+        coin10.Name = "coin10"
+        coin10.Size = New Size(29, 33)
+        coin10.SizeMode = PictureBoxSizeMode.StretchImage
+        coin10.TabIndex = 80
+        coin10.TabStop = False
+        coin10.Tag = "coin"
+        ' 
+        ' coin8
+        ' 
+        coin8.Image = My.Resources.Resources.gold_coin
+        coin8.Location = New Point(75, 392)
+        coin8.Name = "coin8"
+        coin8.Size = New Size(29, 33)
+        coin8.SizeMode = PictureBoxSizeMode.StretchImage
+        coin8.TabIndex = 81
+        coin8.TabStop = False
+        coin8.Tag = "coin"
+        ' 
+        ' PictureBox66
+        ' 
+        PictureBox66.Image = My.Resources.Resources.gold_coin
+        PictureBox66.Location = New Point(665, 268)
+        PictureBox66.Name = "PictureBox66"
+        PictureBox66.Size = New Size(29, 33)
+        PictureBox66.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox66.TabIndex = 84
+        PictureBox66.TabStop = False
+        PictureBox66.Tag = "coin"
+        ' 
+        ' coin13
+        ' 
+        coin13.Image = My.Resources.Resources.gold_coin
+        coin13.Location = New Point(1075, 40)
+        coin13.Name = "coin13"
+        coin13.Size = New Size(29, 33)
+        coin13.SizeMode = PictureBoxSizeMode.StretchImage
+        coin13.TabIndex = 86
+        coin13.TabStop = False
+        coin13.Tag = "coin"
+        ' 
+        ' PictureBox69
+        ' 
+        PictureBox69.Image = My.Resources.Resources.gold_coin
+        PictureBox69.Location = New Point(1098, 116)
+        PictureBox69.Name = "PictureBox69"
+        PictureBox69.Size = New Size(29, 33)
+        PictureBox69.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox69.TabIndex = 87
+        PictureBox69.TabStop = False
+        PictureBox69.Tag = "coin"
+        ' 
+        ' PictureBox74
+        ' 
+        PictureBox74.Image = My.Resources.Resources.gold_coin
+        PictureBox74.Location = New Point(1098, 326)
+        PictureBox74.Name = "PictureBox74"
+        PictureBox74.Size = New Size(29, 33)
+        PictureBox74.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox74.TabIndex = 92
+        PictureBox74.TabStop = False
+        PictureBox74.Tag = "coin"
+        ' 
+        ' PictureBox75
+        ' 
+        PictureBox75.Image = My.Resources.Resources.gold_coin
+        PictureBox75.Location = New Point(1024, 524)
+        PictureBox75.Name = "PictureBox75"
+        PictureBox75.Size = New Size(29, 33)
+        PictureBox75.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox75.TabIndex = 93
+        PictureBox75.TabStop = False
+        PictureBox75.Tag = "coin"
+        ' 
+        ' coin17
+        ' 
+        coin17.Image = My.Resources.Resources.gold_coin
+        coin17.Location = New Point(742, 177)
+        coin17.Name = "coin17"
+        coin17.Size = New Size(29, 33)
+        coin17.SizeMode = PictureBoxSizeMode.StretchImage
+        coin17.TabIndex = 94
+        coin17.TabStop = False
+        coin17.Tag = "coin"
+        ' 
+        ' coin18
+        ' 
+        coin18.Image = My.Resources.Resources.gold_coin
+        coin18.Location = New Point(665, 536)
+        coin18.Name = "coin18"
+        coin18.Size = New Size(29, 33)
+        coin18.SizeMode = PictureBoxSizeMode.StretchImage
+        coin18.TabIndex = 95
+        coin18.TabStop = False
+        coin18.Tag = "coin"
+        ' 
+        ' PictureBox77
+        ' 
+        PictureBox77.Image = My.Resources.Resources.gold_coin
+        PictureBox77.Location = New Point(765, 525)
+        PictureBox77.Name = "PictureBox77"
+        PictureBox77.Size = New Size(29, 33)
+        PictureBox77.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox77.TabIndex = 96
+        PictureBox77.TabStop = False
+        PictureBox77.Tag = "coin"
+        ' 
+        ' PictureBox79
+        ' 
+        PictureBox79.Image = My.Resources.Resources.gold_coin
+        PictureBox79.Location = New Point(1113, 226)
+        PictureBox79.Name = "PictureBox79"
+        PictureBox79.Size = New Size(29, 33)
+        PictureBox79.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox79.TabIndex = 98
+        PictureBox79.TabStop = False
+        PictureBox79.Tag = "coin"
+        ' 
+        ' winscreen
+        ' 
+        winscreen.AutoSize = True
+        winscreen.BackColor = Color.White
+        winscreen.Font = New Font("Segoe UI", 48F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        winscreen.Location = New Point(139, 96)
+        winscreen.Name = "winscreen"
+        winscreen.Size = New Size(863, 212)
+        winscreen.TabIndex = 99
+        winscreen.Text = "YOU WIN!!!!" & vbCrLf & "CONGRATULATIONS!!!!" & vbCrLf
+        winscreen.Visible = False
+        ' 
+        ' resetbutton
+        ' 
+        resetbutton.Font = New Font("Wide Latin", 22.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        resetbutton.Location = New Point(404, 404)
+        resetbutton.Name = "resetbutton"
+        resetbutton.Size = New Size(234, 116)
+        resetbutton.TabIndex = 100
+        resetbutton.Text = "reset"
+        resetbutton.UseVisualStyleBackColor = True
+        resetbutton.Visible = False
+        ' 
+        ' deathscreen
+        ' 
+        deathscreen.AutoSize = True
+        deathscreen.BackColor = Color.White
+        deathscreen.Font = New Font("Segoe UI", 48F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        deathscreen.Location = New Point(278, 86)
+        deathscreen.Name = "deathscreen"
+        deathscreen.Size = New Size(571, 212)
+        deathscreen.TabIndex = 101
+        deathscreen.Text = "YOU DIED." & vbCrLf & "WOMP WOMP" & vbCrLf
+        deathscreen.Visible = False
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.FromArgb(CByte(229), CByte(192), CByte(84))
         ClientSize = New Size(1154, 569)
+        Controls.Add(deathscreen)
+        Controls.Add(resetbutton)
+        Controls.Add(winscreen)
+        Controls.Add(PictureBox79)
+        Controls.Add(PictureBox77)
+        Controls.Add(coin18)
+        Controls.Add(coin17)
+        Controls.Add(PictureBox75)
+        Controls.Add(PictureBox74)
+        Controls.Add(PictureBox69)
+        Controls.Add(coin13)
+        Controls.Add(PictureBox66)
+        Controls.Add(coin8)
+        Controls.Add(coin10)
+        Controls.Add(coin12)
+        Controls.Add(coin19)
+        Controls.Add(PictureBox54)
+        Controls.Add(coin6)
+        Controls.Add(coin5)
+        Controls.Add(coin1)
+        Controls.Add(coin16)
+        Controls.Add(coin15)
+        Controls.Add(coin9)
+        Controls.Add(coin11)
+        Controls.Add(coin7)
+        Controls.Add(coin14)
+        Controls.Add(PictureBox24)
         Controls.Add(finishline)
         Controls.Add(PictureBox23)
         Controls.Add(PictureBox40)
@@ -676,7 +1043,6 @@ Partial Class Form1
         Controls.Add(PictureBox32)
         Controls.Add(PictureBox29)
         Controls.Add(PictureBox31)
-        Controls.Add(PictureBox30)
         Controls.Add(PictureBox28)
         Controls.Add(PictureBox27)
         Controls.Add(PictureBox26)
@@ -751,7 +1117,6 @@ Partial Class Form1
         CType(PictureBox26, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox27, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox28, ComponentModel.ISupportInitialize).EndInit()
-        CType(PictureBox30, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox31, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox29, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox32, ComponentModel.ISupportInitialize).EndInit()
@@ -765,6 +1130,30 @@ Partial Class Form1
         CType(PictureBox40, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox23, ComponentModel.ISupportInitialize).EndInit()
         CType(finishline, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBox24, ComponentModel.ISupportInitialize).EndInit()
+        CType(coin14, ComponentModel.ISupportInitialize).EndInit()
+        CType(coin7, ComponentModel.ISupportInitialize).EndInit()
+        CType(coin11, ComponentModel.ISupportInitialize).EndInit()
+        CType(coin9, ComponentModel.ISupportInitialize).EndInit()
+        CType(coin15, ComponentModel.ISupportInitialize).EndInit()
+        CType(coin16, ComponentModel.ISupportInitialize).EndInit()
+        CType(coin1, ComponentModel.ISupportInitialize).EndInit()
+        CType(coin5, ComponentModel.ISupportInitialize).EndInit()
+        CType(coin6, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBox54, ComponentModel.ISupportInitialize).EndInit()
+        CType(coin19, ComponentModel.ISupportInitialize).EndInit()
+        CType(coin12, ComponentModel.ISupportInitialize).EndInit()
+        CType(coin10, ComponentModel.ISupportInitialize).EndInit()
+        CType(coin8, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBox66, ComponentModel.ISupportInitialize).EndInit()
+        CType(coin13, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBox69, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBox74, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBox75, ComponentModel.ISupportInitialize).EndInit()
+        CType(coin17, ComponentModel.ISupportInitialize).EndInit()
+        CType(coin18, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBox77, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBox79, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -808,7 +1197,6 @@ Partial Class Form1
     Friend WithEvents PictureBox26 As PictureBox
     Friend WithEvents PictureBox27 As PictureBox
     Friend WithEvents PictureBox28 As PictureBox
-    Friend WithEvents PictureBox30 As PictureBox
     Friend WithEvents PictureBox31 As PictureBox
     Friend WithEvents PictureBox29 As PictureBox
     Friend WithEvents PictureBox32 As PictureBox
@@ -822,5 +1210,37 @@ Partial Class Form1
     Friend WithEvents PictureBox40 As PictureBox
     Friend WithEvents PictureBox23 As PictureBox
     Friend WithEvents finishline As PictureBox
+    Friend WithEvents PictureBox24 As PictureBox
+    Friend WithEvents coin14 As PictureBox
+    Friend WithEvents coin7 As PictureBox
+    Friend WithEvents coin11 As PictureBox
+    Friend WithEvents coin9 As PictureBox
+    Friend WithEvents coin15 As PictureBox
+    Friend WithEvents coin16 As PictureBox
+    Friend WithEvents coin1 As PictureBox
+    Friend WithEvents coin5 As PictureBox
+    Friend WithEvents coin6 As PictureBox
+    Friend WithEvents PictureBox54 As PictureBox
+    Friend WithEvents PictureBox55 As PictureBox
+    Friend WithEvents coin19 As PictureBox
+    Friend WithEvents PictureBox57 As PictureBox
+    Friend WithEvents PictureBox58 As PictureBox
+    Friend WithEvents PictureBox59 As PictureBox
+    Friend WithEvents PictureBox60 As PictureBox
+    Friend WithEvents coin12 As PictureBox
+    Friend WithEvents coin10 As PictureBox
+    Friend WithEvents coin8 As PictureBox
+    Friend WithEvents PictureBox66 As PictureBox
+    Friend WithEvents coin13 As PictureBox
+    Friend WithEvents PictureBox69 As PictureBox
+    Friend WithEvents PictureBox74 As PictureBox
+    Friend WithEvents PictureBox75 As PictureBox
+    Friend WithEvents coin17 As PictureBox
+    Friend WithEvents coin18 As PictureBox
+    Friend WithEvents PictureBox77 As PictureBox
+    Friend WithEvents PictureBox79 As PictureBox
+    Friend WithEvents winscreen As Label
+    Friend WithEvents resetbutton As Button
+    Friend WithEvents deathscreen As Label
 
 End Class

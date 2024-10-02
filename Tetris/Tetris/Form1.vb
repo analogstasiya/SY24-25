@@ -3,9 +3,9 @@
     Dim movements As New Dictionary(Of String, Collection)
     Dim tracks As New Dictionary(Of String, Integer)
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
-        follow(Frank, Sheffrard, 3, 3)
+        follow(Frank, Sheffrard, 7, 3)
         Track(lynz, Sheffrard)
-        follow(bert, Sheffrard, 4, 4)
+        follow(bert, Sheffrard, 4, 7)
     End Sub
     Sub PaceX(e As PictureBox, p As PictureBox, speed As Integer)
         Dim dir As Integer
@@ -54,6 +54,74 @@
             coin.Visible = False
             score += 5
         End If
+        If Sheffrard.Bounds.IntersectsWith(coin1.Bounds) Then
+            coin1.Visible = False
+            score += 5
+        End If
+        If Sheffrard.Bounds.IntersectsWith(coin5.Bounds) Then
+            coin5.Visible = False
+            score += 5
+        End If
+        If Sheffrard.Bounds.IntersectsWith(coin6.Bounds) Then
+            coin6.Visible = False
+            score += 5
+        End If
+        If Sheffrard.Bounds.IntersectsWith(coin7.Bounds) Then
+            coin7.Visible = False
+            score += 5
+        End If
+        If Sheffrard.Bounds.IntersectsWith(coin8.Bounds) Then
+            coin8.Visible = False
+            score += 5
+        End If
+        If Sheffrard.Bounds.IntersectsWith(coin9.Bounds) Then
+            coin9.Visible = False
+            score += 5
+        End If
+        If Sheffrard.Bounds.IntersectsWith(coin10.Bounds) Then
+            coin10.Visible = False
+            score += 5
+        End If
+        If Sheffrard.Bounds.IntersectsWith(coin11.Bounds) Then
+            coin11.Visible = False
+            score += 5
+        End If
+        If Sheffrard.Bounds.IntersectsWith(coin12.Bounds) Then
+            coin12.Visible = False
+            score += 5
+        End If
+        If Sheffrard.Bounds.IntersectsWith(coin13.Bounds) Then
+            coin13.Visible = False
+            score += 5
+        End If
+        If Sheffrard.Bounds.IntersectsWith(coin14.Bounds) Then
+            coin14.Visible = False
+            score += 5
+        End If
+        If Sheffrard.Bounds.IntersectsWith(coin15.Bounds) Then
+            coin15.Visible = False
+            score += 5
+        End If
+        If Sheffrard.Bounds.IntersectsWith(coin16.Bounds) Then
+            coin16.Visible = False
+            score += 5
+        End If
+        If Sheffrard.Bounds.IntersectsWith(coin17.Bounds) Then
+            coin17.Visible = False
+            score += 5
+        End If
+        If Sheffrard.Bounds.IntersectsWith(coin18.Bounds) Then
+            coin18.Visible = False
+            score += 5
+        End If
+        If Sheffrard.Bounds.IntersectsWith(coin19.Bounds) Then
+            coin19.Visible = False
+            score += 5
+        End If
+        If Sheffrard.Bounds.IntersectsWith(finishline.Bounds) Then
+            winscreen.Visible = True
+            resetbutton.Visible = True
+        End If
     End Sub
     Sub movee(p As PictureBox, xdir As Integer, ydir As Integer)
         p.Location += New Point(xdir, ydir)
@@ -66,7 +134,11 @@
             movements.Add(p.Name, New Collection)
         End If
         movements(p.Name).Add(p.Location)
-
+        If IntersectsWith(p, "enemy") Then
+            Timer2.Enabled = False
+            deathscreen.Visible = True
+            resetbutton.Visible = True
+        End If
     End Sub
     Sub Track(e As PictureBox, a As PictureBox)
         If Not tracks.ContainsKey(e.Name & a.Name) Then
@@ -98,9 +170,10 @@
     End Function
     Private Sub Timer2_Tick(sender As Object, e As EventArgs) Handles Timer2.Tick
         score += 1
-        ScoreLabel.Text = score
+        scorelabel.Text = score
+        If Sheffrard.Bounds.IntersectsWith(finishline.Bounds) Then
+            Timer2.Enabled = False
+        End If
     End Sub
-    Private Sub PictureBox24_Click(sender As Object, e As EventArgs) Handles finishline.Click
 
-    End Sub
 End Class
