@@ -32,8 +32,9 @@
         Else
             movee(e, -xspeed, 0)
         End If
+
     End Sub
-    Private Sub Form1_KeyDown(sender As Object, e As KeyEventArgs) Handles MyBase.KeyDown
+    Private Sub Form1_KeyDown(sender As Object, e As KeyEventArgs) Handles MyBase.KeyDown, resetbutton.KeyDown
         If e.KeyCode = Keys.Right Or e.KeyCode = Keys.D Then
             movee(Sheffrard, 30, 0)
         End If
@@ -50,6 +51,7 @@
             movee(Sheffrard, 0, -30)
         End If
         Sheffrard.Refresh()
+
         If Sheffrard.Bounds.IntersectsWith(coin.Bounds) Then
             coin.Visible = False
             score += 5
@@ -140,19 +142,7 @@
             resetbutton.Visible = True
         End If
     End Sub
-    Sub Track(e As PictureBox, a As PictureBox)
-        If Not tracks.ContainsKey(e.Name & a.Name) Then
-            tracks.Add(e.Name & a.Name, 1)
-        Else
-            Dim idx As Integer
-            idx = tracks(e.Name & a.Name)
-            If movements.ContainsKey(a.Name) AndAlso idx < movements(a.Name).Count Then
-                e.Location = movements(a.Name).Item(idx)
-                tracks(e.Name & a.Name) = idx + 1
-            End If
 
-        End If
-    End Sub
 
     Function IntersectsWith(p As PictureBox, tag As String, Optional ByRef other As PictureBox = Nothing) As Boolean
         For Each o In Controls
@@ -173,6 +163,48 @@
         scorelabel.Text = score
         If Sheffrard.Bounds.IntersectsWith(finishline.Bounds) Then
             Timer2.Enabled = False
+        End If
+    End Sub
+
+    Private Sub resetbutton_Click(sender As Object, e As EventArgs) Handles resetbutton.Click, resetbutton.Click
+        Sheffrard.Location = New Point(14, 202)
+        lynz.Location = New Point(12, 33)
+        Frank.Location = New Point(170, 34)
+        bert.Location = New Point(493, 116)
+        resetbutton.Visible = False
+        winscreen.Visible = False
+        deathscreen.Visible = False
+        coin.Visible = True
+        coin1.Visible = True
+        coin10.Visible = True
+        coin11.Visible = True
+        coin12.Visible = True
+        coin13.Visible = True
+        coin14.Visible = True
+        coin15.Visible = True
+        coin17.Visible = True
+        coin16.Visible = True
+        coin18.Visible = True
+        coin19.Visible = True
+        coin5.Visible = True
+        coin6.Visible = True
+        coin7.Visible = True
+        coin8.Visible = True
+        coin9.Visible = True
+        Timer2.Enabled = True
+        score = 0
+    End Sub
+    Sub Track(e As PictureBox, a As PictureBox)
+        If Not tracks.ContainsKey(e.Name & a.Name) Then
+            tracks.Add(e.Name & a.Name, 1)
+        Else
+            Dim idx As Integer
+            idx = tracks(e.Name & a.Name)
+            If movements.ContainsKey(a.Name) AndAlso idx < movements(a.Name).Count Then
+                e.Location = movements(a.Name).Item(idx)
+                tracks(e.Name & a.Name) = idx + 1
+            End If
+
         End If
     End Sub
 

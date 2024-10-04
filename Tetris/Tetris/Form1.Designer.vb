@@ -967,7 +967,7 @@ Partial Class Form1
         winscreen.AutoSize = True
         winscreen.BackColor = Color.White
         winscreen.Font = New Font("Segoe UI", 48F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        winscreen.Location = New Point(139, 96)
+        winscreen.Location = New Point(131, 86)
         winscreen.Name = "winscreen"
         winscreen.Size = New Size(863, 212)
         winscreen.TabIndex = 99
@@ -977,7 +977,7 @@ Partial Class Form1
         ' resetbutton
         ' 
         resetbutton.Font = New Font("Wide Latin", 22.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        resetbutton.Location = New Point(404, 404)
+        resetbutton.Location = New Point(411, 403)
         resetbutton.Name = "resetbutton"
         resetbutton.Size = New Size(234, 116)
         resetbutton.TabIndex = 100
@@ -990,7 +990,7 @@ Partial Class Form1
         deathscreen.AutoSize = True
         deathscreen.BackColor = Color.White
         deathscreen.Font = New Font("Segoe UI", 48F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        deathscreen.Location = New Point(278, 86)
+        deathscreen.Location = New Point(229, 86)
         deathscreen.Name = "deathscreen"
         deathscreen.Size = New Size(571, 212)
         deathscreen.TabIndex = 101
