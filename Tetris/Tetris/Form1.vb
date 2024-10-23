@@ -201,7 +201,7 @@
             Dim idx As Integer
             idx = tracks(e.Name & a.Name)
             If movements.ContainsKey(a.Name) AndAlso idx < movements(a.Name).Count Then
-                e.Location = movements(a.Name).Item(idx)
+
                 tracks(e.Name & a.Name) = idx + 1
             End If
 
