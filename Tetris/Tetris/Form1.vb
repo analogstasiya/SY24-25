@@ -7,6 +7,19 @@
         Track(lynz, Sheffrard)
         follow(bert, Sheffrard, 4, 7)
     End Sub
+    Sub Track(e As PictureBox, a As PictureBox)
+        If Not tracks.ContainsKey(e.Name & a.Name) Then
+            tracks.Add(e.Name & a.Name, 1)
+        Else
+            Dim idx As Integer
+            idx = tracks(e.Name & a.Name)
+            If movements.ContainsKey(a.Name) AndAlso idx < movements(a.Name).Count Then
+
+                tracks(e.Name & a.Name) = idx + 1
+            End If
+
+        End If
+    End Sub
     Sub PaceX(e As PictureBox, p As PictureBox, speed As Integer)
         Dim dir As Integer
         dir = e.Tag
@@ -20,6 +33,7 @@
             e.Tag = dir * -1
         End If
     End Sub
+
 
     Sub follow(e As PictureBox, a As PictureBox, xspeed As Integer, yspeed As Integer)
         If e.Location.Y < a.Location.Y Then
@@ -137,9 +151,7 @@
         End If
         movements(p.Name).Add(p.Location)
         If IntersectsWith(p, "enemy") Then
-            Timer2.Enabled = False
-            deathscreen.Visible = True
-            resetbutton.Visible = True
+
         End If
     End Sub
 
@@ -193,19 +205,6 @@
         coin9.Visible = True
         Timer2.Enabled = True
         score = 0
-    End Sub
-    Sub Track(e As PictureBox, a As PictureBox)
-        If Not tracks.ContainsKey(e.Name & a.Name) Then
-            tracks.Add(e.Name & a.Name, 1)
-        Else
-            Dim idx As Integer
-            idx = tracks(e.Name & a.Name)
-            If movements.ContainsKey(a.Name) AndAlso idx < movements(a.Name).Count Then
-
-                tracks(e.Name & a.Name) = idx + 1
-            End If
-
-        End If
     End Sub
 
 End Class
