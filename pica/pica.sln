@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35122.118
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "pica", "pica\pica.vbproj", "{AFBC4CFB-959A-47A0-8B1D-28C0755DD988}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AFBC4CFB-959A-47A0-8B1D-28C0755DD988}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFBC4CFB-959A-47A0-8B1D-28C0755DD988}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFBC4CFB-959A-47A0-8B1D-28C0755DD988}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFBC4CFB-959A-47A0-8B1D-28C0755DD988}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F3C0B701-0EFF-4846-9E85-A069C642D222}
+	EndGlobalSection
+EndGlobal
