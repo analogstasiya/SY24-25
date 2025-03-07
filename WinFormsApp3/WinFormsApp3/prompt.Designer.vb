@@ -34,14 +34,15 @@ Partial Class prompt
         promptdisplay.Location = New Point(492, 34)
         promptdisplay.Name = "promptdisplay"
         promptdisplay.Size = New Size(259, 178)
+        promptdisplay.SizeMode = PictureBoxSizeMode.StretchImage
         promptdisplay.TabIndex = 0
         promptdisplay.TabStop = False
         ' 
         ' option1
         ' 
-        option1.Location = New Point(383, 260)
+        option1.Location = New Point(316, 260)
         option1.Name = "option1"
-        option1.Size = New Size(94, 29)
+        option1.Size = New Size(161, 113)
         option1.TabIndex = 1
         option1.Text = "Button1"
         option1.UseVisualStyleBackColor = True
@@ -50,7 +51,7 @@ Partial Class prompt
         ' 
         option2.Location = New Point(492, 260)
         option2.Name = "option2"
-        option2.Size = New Size(94, 29)
+        option2.Size = New Size(164, 113)
         option2.TabIndex = 2
         option2.Text = "Button2"
         option2.UseVisualStyleBackColor = True
@@ -61,7 +62,7 @@ Partial Class prompt
         prompttb.Multiline = True
         prompttb.Name = "prompttb"
         prompttb.ReadOnly = True
-        prompttb.Size = New Size(193, 179)
+        prompttb.Size = New Size(193, 89)
         prompttb.TabIndex = 3
         ' 
         ' prompt

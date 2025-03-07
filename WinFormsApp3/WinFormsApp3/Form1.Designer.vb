@@ -38,6 +38,9 @@ Partial Class Form1
         PictureBox13 = New PictureBox()
         PictureBox14 = New PictureBox()
         PictureBox15 = New PictureBox()
+        Button1 = New Button()
+        Button2 = New Button()
+        TextBox1 = New TextBox()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox3, ComponentModel.ISupportInitialize).BeginInit()
@@ -220,11 +223,44 @@ Partial Class Form1
         PictureBox15.TabStop = False
         PictureBox15.Visible = False
         ' 
+        ' Button1
+        ' 
+        Button1.Location = New Point(494, 313)
+        Button1.Name = "Button1"
+        Button1.Size = New Size(94, 29)
+        Button1.TabIndex = 15
+        Button1.Text = "Restart"
+        Button1.UseVisualStyleBackColor = True
+        Button1.Visible = False
+        ' 
+        ' Button2
+        ' 
+        Button2.Font = New Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Button2.Location = New Point(29, 140)
+        Button2.Name = "Button2"
+        Button2.Size = New Size(220, 61)
+        Button2.TabIndex = 16
+        Button2.Text = "New Game!"
+        Button2.UseVisualStyleBackColor = True
+        ' 
+        ' TextBox1
+        ' 
+        TextBox1.Font = New Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        TextBox1.Location = New Point(12, 12)
+        TextBox1.Multiline = True
+        TextBox1.Name = "TextBox1"
+        TextBox1.Size = New Size(528, 83)
+        TextBox1.TabIndex = 17
+        TextBox1.Text = "7 Year Old Boy Living In The 80's Simulator" & vbCrLf & "By Anastasiya Flinn>:)" & vbCrLf
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(800, 450)
+        Controls.Add(TextBox1)
+        Controls.Add(Button2)
+        Controls.Add(Button1)
         Controls.Add(PictureBox15)
         Controls.Add(PictureBox14)
         Controls.Add(PictureBox13)
@@ -258,6 +294,7 @@ Partial Class Form1
         CType(PictureBox14, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox15, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
+        PerformLayout()
     End Sub
 
     Friend WithEvents PictureBox1 As PictureBox
@@ -275,5 +312,8 @@ Partial Class Form1
     Friend WithEvents PictureBox13 As PictureBox
     Friend WithEvents PictureBox14 As PictureBox
     Friend WithEvents PictureBox15 As PictureBox
+    Friend WithEvents Button1 As Button
+    Friend WithEvents Button2 As Button
+    Friend WithEvents TextBox1 As TextBox
 
 End Class
