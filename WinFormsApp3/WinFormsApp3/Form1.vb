@@ -37,10 +37,13 @@ Public Class Form1
                 If ask("Do you build a snowman or sled down the hill your house is built atop?", PictureBox1, "build a snowman", "sled down the hill") = "sled down the hill" Then
                     say("You fall down the hill and crack your skull open and bleed to death. YOU LOSE. PLAY AGAIN.", PictureBox5)
                     Button1.Visible = True
+                Else
+                    say("You build a snowman, but you're missing the most important part, the carrot nose. You have no money to buy a carrot.", PictureBox6)
                     If ask("Do you steal from the super market or do you beg people for money?", PictureBox9, "beg", "steal") = "steal" Then
                         say("You get caught and are shot 4 times by store security and die. YOU LOSE. PLAY AGAIN.", PictureBox7)
                         Button1.Visible = True
                     Else
+                        say("An old lady pities you and gives you $10, which is enough to buy a carrot AND some flowers to give to your crush.", PictureBox9)
                         If ask("Buy just the carrot or carrot and flowers?", PictureBox9, "just carrot", "carrot and flowers") = "just carrot" Then
                             say("You finish building a beautiful snowman without dying. WIN! Play again if you want! :)", PictureBox13)
                             Button1.Visible = True
